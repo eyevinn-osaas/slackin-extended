@@ -85,7 +85,7 @@ Every CLI parameter, including mandatory arguments (workspace ID and token), can
 | --- | --- | --- | --- | --- |
 | Positional 1 | — | `SLACK_SUBDOMAIN` | **Required** | Slack workspace ID (`https://**{this}**.slack.com`) |
 | Positional 2 | — | `SLACK_API_TOKEN` | **Required** | [API token](https://get.slack.help/hc/en-us/articles/215770388-Creating-and-regenerating-API-tokens) |
-| --inviteurl | -i | `SLACKIN_INVITE_URL` | `''` | Invitation URL to fallback to if invitation cannot be sent by slackin |
+| --inviteurl | -i | `SLACK_INVITE_URL` | `''` | Invitation URL to fallback to if invitation cannot be sent by slackin |
 | --port | -p | `SLACKIN_PORT` | `3000` | Port to listen on |
 | --hostname | -h | `SLACKIN_HOSTNAME` | `'0.0.0.0'` | Hostname to listen on |
 | --channels | -c | `SLACKIN_CHANNELS` | `''` | One or more comma-separated channel names to allow single-channel guests |

@@ -15,7 +15,7 @@ const mainLog = dbg('slackin:main');
 args
   .option(
     ['i', 'inviteurl'], 'Invite link URL to fallback to',
-    process.env.SLACKIN_INVITE_URL,
+    process.env.SLACK_INVITE_URL,
   )
   .option(
     ['p', 'port'], 'Port to listen on',
