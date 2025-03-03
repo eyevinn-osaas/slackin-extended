@@ -14,6 +14,10 @@ const mainLog = dbg('slackin:main');
 
 args
   .option(
+    ['i', 'inviteurl'], 'Invite link URL to fallback to',
+    process.env.SLACKIN_INVITE_URL,
+  )
+  .option(
     ['p', 'port'], 'Port to listen on',
     process.env.SLACKIN_PORT || hostenv.PORT || 3000,
   )
@@ -83,7 +87,6 @@ const flags = args.parse(process.argv, {
   value: '<team-id> <api-token>',
   help: false,
 });
-
 // Required arguments
 const org = args.sub[0] || process.env.SLACK_SUBDOMAIN;
 const token = args.sub[1] || process.env.SLACK_API_TOKEN;
